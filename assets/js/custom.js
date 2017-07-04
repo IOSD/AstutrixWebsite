@@ -12,7 +12,8 @@ function myMap() {
 
     var mapOptions = {
         center: new google.maps.LatLng(0,0) ,
-        zoom: 2,   
+        zoom: 2,
+        scrollwheel: false   
     }
 
 
