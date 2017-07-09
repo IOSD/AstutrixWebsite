@@ -682,26 +682,26 @@ $(document).ready(function() {
 // More info: https://github.com/agragregra/uniMail
 /////////////////////////////////////////////////////
 
-$(function() {
+// $(function() {
 
-  //E-mail Ajax Send
-  $("#contact-form").submit(function() { //Change (your contact form ID)
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change (mail.php path)
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you. Your message has been sent!");
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
+//   //E-mail Ajax Send
+//   $("#contact-form").submit(function() { //Change (your contact form ID)
+//     var th = $(this);
+//     $.ajax({
+//       type: "POST",
+//       url: "https://formspree.io/info@astutrix.com", //Change (mail.php path)
+//       data: th.serialize()
+//     }).done(function() {
+//       alert("Thank you. Your message has been sent!");
+//       setTimeout(function() {
+//         // Done Functions
+//         th.trigger("reset");
+//       }, 1000);
+//     });
+//     // return false;
+//   });
 
-});
+// });
 
 
 /////////////////////////
