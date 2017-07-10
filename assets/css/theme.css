@@ -1520,7 +1520,7 @@ section {
 }
 @media (max-width: 768px) {
 	#intro .intro-caption .intro-title span {
-		font-size: 62px;
+		font-size: 48px;
 	}
 	#intro .intro-caption .intro-description {
 		font-size: 16px;
