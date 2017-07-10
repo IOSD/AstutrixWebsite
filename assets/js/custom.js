@@ -11,7 +11,7 @@ function myMap() {
 
 
     var mapOptions = {
-        center: new google.maps.LatLng(0,0) ,
+        center: delhi ,
         zoom: 2,
         scrollwheel: false   
     }
