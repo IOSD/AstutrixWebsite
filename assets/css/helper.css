@@ -2,7 +2,7 @@
 * Template Helper Stylesheet
 *
 * Helper classes. You are free to use these extra prepared helper classes to customize your web site.
-* Template main color: #f7465b;
+* Template main color: #00bed2;
 ------------------------------------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------- *
@@ -788,11 +788,11 @@
 .border-right-outset { border-right-style: outset !important; }
 
 /* border color classes */
-.border-main { border-color: #f7465b !important; } /* template main color */
-.border-top-main { border-top-color: #f7465b !important; } /* template main color */
-.border-bottom-main { border-bottom-color: #f7465b !important; } /* template main color */
-.border-left-main { border-left-color: #f7465b !important; } /* template main color */
-.border-right-main { border-right-color: #f7465b !important; } /* template main color */
+.border-main { border-color: #00bed2 !important; } /* template main color */
+.border-top-main { border-top-color: #00bed2 !important; } /* template main color */
+.border-bottom-main { border-bottom-color: #00bed2 !important; } /* template main color */
+.border-left-main { border-left-color: #00bed2 !important; } /* template main color */
+.border-right-main { border-right-color: #00bed2 !important; } /* template main color */
 
 .border-white { border-color: #FFF !important; }
 .border-top-white { border-top-color: #FFF !important; }
@@ -879,7 +879,7 @@
  *  Text color classes
 /* ------------------------------------------------------------- */
 
-.text-main { color: #f7465b !important; } /* template main color */
+.text-main { color: #00bed2 !important; } /* template main color */
 .text-white { color: #FFF !important; }
 .text-gray { color: #A4AAAD !important; }
 .text-gray-2 { color: #D1D5D6 !important; }
@@ -900,7 +900,7 @@
  *  Link color classes
 /* ------------------------------------------------------------- */
 
-.link-main a { color: #f7465b !important; } /* template main color */
+.link-main a { color: #00bed2 !important; } /* template main color */
 .link-white a { color: #FFF !important; }
 .link-gray a { color: #A4AAAD !important; }
 .link-gray-2 a { color: #D1D5D6 !important; }
@@ -921,7 +921,7 @@
  *  Background color classes
 /* ------------------------------------------------------------- */
 
-.bg-main { background-color: #f7465b !important; } /* template main color */
+.bg-main { background-color: #00bed2 !important; } /* template main color */
 .bg-white { background-color: #FFF !important; }
 .bg-gray { background-color: #A4AAAD !important; }
 .bg-gray-2 { background-color: #D1D5D6 !important; }
