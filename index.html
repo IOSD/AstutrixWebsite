@@ -60,6 +60,38 @@
 	   <![endif]-->
 	   <style type="text/css">
 <style type="text/css">
+
+@media only screen and (max-width: 1000px){
+	.memeber_info_warper{
+		width: 400px;
+		overflow: hidden;
+		border: 1px solid blue;
+		border-radius: 2px;
+		background-color: whitesmoke;
+		text-align: center;
+		padding:10px;
+		padding-bottom: 0px;
+		margin-left: 10px;
+		margin-top: 50px;
+	}
+	.member_desc{
+		display: none;
+	}
+	#section-3{
+		height:1290px;
+	}
+	#back_img{
+		display: none;
+	}
+	.content_child{
+		background-color: rgba(0,0,0,0.8);
+		padding-bottom: 10px;
+		border-bottom: 35px solid #00D0FF;
+	}
+	#team_warper{
+		border-bottom: 0px ;
+	}
+}
 	.memeber_info_warper{
 		width: 400px;
 		overflow: hidden;
@@ -96,10 +128,13 @@
 	.member_desc>p{margin : 0px; padding:10px; text-overflow: ellipsis; text-align: justify;}
 	.team_warper_child{position: absolute;}
 	.content_child{
-		background-color: rgba(0,0,0,0.6);
-		height: 600px;
 		overflow-x: hidden;
+		background-color: rgba(0,0,0,0.6);
+		padding-bottom: 10px;
+		border-bottom: 35px solid #00D0FF;
+		overflow-y: scroll;
 		width: 100%;
+		height: inherit;
 	}
 	.back_img_warper{
 		width: 100%;
@@ -114,41 +149,9 @@
 		border-top: 35px solid #00d0ff;
     	width: 100%;
     	height: 600px;
-    	border-bottom: 35px solid #00D0FF;
 	}
-
-@media only screen and (max-width: 1000px){
-	.memeber_info_warper{
-		width: 400px;
-		overflow: hidden;
-		border: 1px solid blue;
-		border-radius: 2px;
-		background-color: whitesmoke;
-		text-align: center;
-		padding:10px;
-		padding-bottom: 0px;
-		margin-left: 10px;
-		margin-top: 50px;
-	}
-	.member_desc{
-		display: none;
-	}
-	#section-3{
-		height:1290px;
-	}
-	#back_img{
-		display: none;
-	}
-	.content_child{
-		background-color: rgba(0,0,0,0.8);
-		padding-bottom: 10px;
-		border-bottom: 35px solid #00D0FF;
-	}
-	#team_warper{
-		border-bottom: 0px ;
-	}
-}
-
+	#team_table{
+    	margin:auto;}
 </style>
 </style>
 
@@ -930,7 +933,19 @@
 	   ============================== -->
 
 
+	   <!-- Trigger/Open The Modal -->
+		<button id="myBtn" hidden="false">Open Modal</button>
 
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>Some text in the Modal..</p>
+		  </div>
+
+		</div>
 
 
 	   <!-- ================================================================================
@@ -1056,88 +1071,17 @@ His areas of special interest are General Management, New and Emerging Digital T
 	};
 
 	function open_team_mem_info(i){
-		var t = window.open();
-		var o = team_members;
-		t.document.write(`<div class="memeber_info_warper member_`+i+`" onclick = "open_team_mem_info(`+i+`)" >
-							<img src ="`+o[i].img+`" class="member_`+i+`_img memeber_img memeber_info_`+i+`" />
-							<div class="member_`+i+`_srt_info memeber_info memeber_info_`+i+`" style="width:100%; text-align:center">
-								<h1 class="member_`+i+`_img memeber_name memeber_info_`+i+`">`+o[i].name+`</h1>
-								<h3 class="member_`+i+`_img memeber_post memeber_info_`+i+`">`+o[i].post+`</h3>
-							</div>
-							<div class="member_`+i+`_desc memeber_desc member_desc memeber_info_`+i+`" style="width:100%;">
-								<p>`+o[i].desc+`</p>
-							</div>
-						</div>
-<style type="text/css">
-	.memeber_info_warper{
-		margin:auto;
-		width: `+innerWidth+`px;
-		overflow: hidden;
-		border: 1px solid blue;
-		border-radius: 2px;
-		background-color: whitesmoke;
-		text-align: center;
-		padding:10px;
-		padding-bottom: 0px;
-	}
-	.member_img{
-		width: 400px;
-	}
-	.memeber_info{
-		font-family: 'lato',arial;
-	}
-	.memeber_name{
-		color: blue;margin: 0px;
-	}
-	.memeber_post{
-		color: grey;opacity: .5;
-	}
-	.member_desc{
-		font-family: 'lato',arial;
-		background: linear-gradient(to top,rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
-		position: relative;
-		bottom: 0px;
-		text-shadow: 0px 0px 1px #fff;
-		font-weight: bold;
-		display: block;
-	}
-	.member_desc>p{margin : 0px; padding:10px; text-overflow: ellipsis; text-align: justify;}
-	.team_warper_child{position: absolute;}
-	.content_child{
-		background-color: rgba(0,0,0,0.6);
-		height: 600px;
-		overflow-x: hidden;
-		width: 100%;
-	}
-	.back_img_warper{
-		width: 100%;
-		height: 600px;
-		overflow: hidden;
-	}
-	td{
-		vertical-align: top;
-	}
-
-	#team_warper{
-		border-top: 35px solid #00d0ff;
-    	width: 100%;
-    	height: 600px;
-    	border-bottom: 35px solid #00D0FF;
-	}
-
-/*@media only screen and (max-width: 500px){
-	.memeber_info_warper{
-		width: auto;
-	}
-	.member_desc{
-		display: none;
-	}
-}*/
-
-</style>
-						`)
+		var mo = document.getElementsByClassName('modal-content')[0].children[1];
+		mo.innerHTML = `<img src="`+team_members[i].img+`" margin:auto; />
+			<h1>`+team_members[i].name+`</h1>
+			<h3>`+team_members[i].post+`</h3>
+			<p>`+team_members[i].desc+`</p>
+		`;
+		document.getElementById('myBtn').click();
 	}
 </script>
+<link rel="stylesheet" type="text/css" href="model_box.css" />
+<script type="text/javascript" src="model_box.js"></script>
 	</body>
 	<!-- End body -->
 
